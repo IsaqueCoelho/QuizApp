@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="msg_textview_quizapptitle">Android QuizApp!</string>
+    <string name="msg_description_app">Hello, this is a simple app to test your knowledge about Android System!</string>
+
+    <string name="msg_textview_firstquestion">1. What is the most popular mobile OS of the World?</string>
+
+    <string name="msg_textview_secondquestion">2. What is the Android owner company?</string>
+    <string name="msg_radiobutton_secondquestion_firstoption">Microsoft</string>
+    <string name="msg_radiobutton_secondquestion_secondoption">Google</string>
+    <string name="msg_radiobutton_secondquestion_thirdoption">Apple</string>
+
+    <string name="msg_textview_thirdquestion">3. Check only the correct android version!</string>
+    <string name="msg_checkbox_thirdquestion_firstoption">Oreo (v8.0)</string>
+    <string name="msg_checkbox_thirdquestion_secondoption">kitkat (v5.0)</string>
+    <string name="msg_checkbox_thirdquestion_thirdoption">Pie (v9.0)</string>
+    <string name="msg_textview_fourthquestion">4. Check if It\'s true that Android can be programed in Kotlin and Java language!</string>
+    <string name="msg_button_confirmform">CONFIRMAR</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="mainTitleText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/titleText</item>
+        <item name="android:padding">@dimen/largePadding</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="normalTitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/bodyText</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="normalBodyText">
+        <item name="android:textSize">@dimen/bodyText</item>
+        <item name="android:paddingStart">@dimen/largePadding</item>
+        <item name="android:paddingEnd">@dimen/largePadding</item>
+    </style>
+
+    <style name="linearlayoutCard">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">@dimen/largePadding</item>
+        <item name="android:paddingTop">@dimen/mediumPadding</item>
+        <item name="android:paddingEnd">@dimen/mediumPadding</item>
+        <item name="android:paddingBottom">@dimen/mediumPadding</item>
+    </style>
+
+
+    <style name="editTextFirstQuestion">
+        <item name="android:layout_marginTop">@dimen/mediumMargin</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="radiogroupSecondQuestion">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/mediumMargin</item>
+    </style>
+
+</resources>
