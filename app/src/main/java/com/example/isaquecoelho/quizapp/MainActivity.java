@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void cleanForm() {
         mEditTextFirstQuestion.setText(null);
-        mRadioButtonSecondQuestionThirdOption.setChecked(false);
+        mRadioButtonSecondQuestionFirstOption.setChecked(false);
         mRadioButtonSecondQuestionSecondOption.setChecked(false);
         mRadioButtonSecondQuestionThirdOption.setChecked(false);
         mCheckBoxThirdQuestionFirstOption.setChecked(false);
