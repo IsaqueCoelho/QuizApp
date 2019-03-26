@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private final boolean LOADING_FORM = false;
-    private final boolean LOADED_FORM = true;
 
     private EditText mEditTextFirstQuestion;
     private RadioButton mRadioButtonSecondQuestionFirstOption;
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         int points = 0;
         String CONSTANT_RESULT_FIRST_QUESTION = "ANDROID";
 
-        if(mEditTextFirstQuestion.getText().toString().toUpperCase().contains(CONSTANT_RESULT_FIRST_QUESTION)){
+        if(mEditTextFirstQuestion.getText().toString().trim().equalsIgnoreCase(CONSTANT_RESULT_FIRST_QUESTION)){
             points++;
         }
 
@@ -83,11 +82,9 @@ public class MainActivity extends AppCompatActivity {
             points++;
         }
 
-        if (mCheckBoxThirdQuestionFirstOption.isChecked()){
-            points++;
-        }
-
-        if (mCheckBoxThirdQuestionThirdOption.isChecked()){
+        if (mCheckBoxThirdQuestionFirstOption.isChecked()
+                && mCheckBoxThirdQuestionThirdOption.isChecked()
+                && !mCheckBoxThirdQuestionSecondOption.isChecked()){
             points++;
         }
 
@@ -102,17 +99,14 @@ public class MainActivity extends AppCompatActivity {
     private void showResult(int points) {
         String message;
 
-        switch (points){
-            case 5:
-                message = "You make " + points + " points, AMAZING!";
-                break;
-            default:
-                message = "You make " + points + " points, TRY AGAIN!";
-                break;
+        if(points == 4){
+            message = "You passed the Quiz with score " + points + ", it's AMAZING!";
+        } else {
+            message = "You failed with score " + points + " points, TRY AGAIN!";
         }
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-        loadingForm(LOADED_FORM);
+        loadingForm(true);
         cleanForm();
     }
 

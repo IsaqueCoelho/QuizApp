@@ -4,25 +4,13 @@
     <!-- Text Dimens -->
     <dimen name="titleText">20sp</dimen>
     <dimen name="bodyText">16sp</dimen>
-    <dimen name="overlineText">12sp</dimen>
 
     <!-- Padding Dimens -->
     <dimen name="largePadding">16dp</dimen>
     <dimen name="mediumPadding">8dp</dimen>
-    <dimen name="shortPadding">4dp</dimen>
-    <dimen name="nonePadding">0dp</dimen>
 
     <!-- Margin Dimens -->
     <dimen name="largeMargin">16dp</dimen>
     <dimen name="mediumMargin">8dp</dimen>
-    <dimen name="shortMargin">4dp</dimen>
-    <dimen name="noneMargin">0dp</dimen>
-
-
-    <!-- Border Radius Dimens -->
-    <dimen name="heavyRadius">16dp</dimen>
-    <dimen name="mediumRadius">8dp</dimen>
-    <dimen name="softRadius">4dp</dimen>
-    <dimen name="noneRadius">0dp</dimen>
 
 </resources>
